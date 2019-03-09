@@ -3,9 +3,6 @@
     <h2 itemprop="name">
       <a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
     </h2>
-    {{ if eq .Type "post" }}
-      <p class="muted">{{ partial "post/meta.html" . }}</p>
-    {{ end }}
   </header>
   {{ if .Description }}
     <blockquote itemprop="headline">{{ .Description }}</blockquote>
