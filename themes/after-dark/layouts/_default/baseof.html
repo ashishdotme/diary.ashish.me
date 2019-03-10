@@ -43,13 +43,7 @@
     {{ end }}
     {{ partial "head/favicon.html" . }}
     {{ partial "global-styles.html" . }}
-    {{ $highlights := findRE "class\\s*?=\\s*?\".*?\\bhighlight\\b.*?\"|class\\s*?=\\s*?highlight\\b" .Content }}
-    {{ if ge (len $highlights) 1 }}
-      <script integrity="sha512-ISTAV0GadOIz/NXXHOS+eCM0ysXVVHhQTlvA6LJxz/DeA5yIxm0Vqf5IE+WH0yuuXkayAKtoZkQ326nch5f/fg==">fetchInject([{{ "/css/syntax.css" | relURL }}]);</script>
-      <noscript>
-        <link href="{{ "/css/syntax.css" | relURL }}" rel="stylesheet">
-      </noscript>
-    {{ end }}
+    <!-- <link href="{{ "/css/syntax.css" | relURL }}" rel="stylesheet"> -->
   </head>
   {{ $hackcss_disabled := .Site.Params.hackcss.disabled | default false }}
   {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}

@@ -1,6 +1,6 @@
 baseurl = "https://diary.ashish.me" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
-title = "Today I Learned" # Homepage title and page title suffix
+title = "Daily log" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
 
 # Controls default theme and theme components
